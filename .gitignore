@@ -1,5 +1,5 @@
-venv
 .idea
-.python-version
 .vscode
 .pytest_cache
+.python-version
+venv

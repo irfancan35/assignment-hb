@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on darwin)" generated="20191128 22:01:21.211" rpa="false">
+<suite id="s1" name="Adding Product To Basket" source="/Users/trcanirf/development/assignment-hb/robot/adding_product_to_basket.robot">
+<test id="s1-t1" name="Adding Products to the Basket by User Login">
+<kw name="Begin Web Test" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:21.529" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20191128 22:01:21.528" endtime="20191128 22:01:23.582"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191128 22:01:23.584" endtime="20191128 22:01:23.739"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:21.528" endtime="20191128 22:01:23.739"></status>
+</kw>
+<kw name="Add Product Fifa 20 to the Basket by User Login">
+<kw name="Open Home Page">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:23.741" level="INFO">Opening url 'https://www.hepsiburada.com'</msg>
+<status status="PASS" starttime="20191128 22:01:23.740" endtime="20191128 22:01:27.963"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:01:30.965" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:27.963" endtime="20191128 22:01:30.966"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:23.740" endtime="20191128 22:01:30.966"></status>
+</kw>
+<kw name="Navigate To Login Page">
+<kw name="Mouse Up" library="Selenium2Library">
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>${LOC_MYACCOUNT}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:30.967" level="INFO">Simulating Mouse Up on element 'css=#myAccount.icon-view-account'.</msg>
+<status status="PASS" starttime="20191128 22:01:30.967" endtime="20191128 22:01:31.498"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:01:32.500" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:01:31.498" endtime="20191128 22:01:32.501"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGIN_USERNAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:32.501" level="INFO">Clicking element 'id=login'.</msg>
+<status status="PASS" starttime="20191128 22:01:32.501" endtime="20191128 22:01:33.473"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:01:35.475" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:33.473" endtime="20191128 22:01:35.475"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:30.966" endtime="20191128 22:01:35.476"></status>
+</kw>
+<kw name="Login With Crendentials">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_EMAIL}</arg>
+<arg>${usr_mail}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:35.477" level="INFO">Typing text 'test.hepsiburada@yopmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20191128 22:01:35.476" endtime="20191128 22:01:35.650"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:01:36.651" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:01:35.650" endtime="20191128 22:01:36.652"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_PASSWORD}</arg>
+<arg>${usr_pass}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:36.652" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" starttime="20191128 22:01:36.652" endtime="20191128 22:01:36.741"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:36.741" level="INFO">Clicking element 'css=.btn-login-submit'.</msg>
+<status status="PASS" starttime="20191128 22:01:36.741" endtime="20191128 22:01:36.855"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:01:39.857" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:36.855" endtime="20191128 22:01:39.857"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:35.476" endtime="20191128 22:01:39.857"></status>
+</kw>
+<kw name="Search A Product">
+<arguments>
+<arg>${product}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH}</arg>
+<arg>${term}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:39.858" level="INFO">Typing text 'Fifa 20' into text field 'id=productSearch'.</msg>
+<status status="PASS" starttime="20191128 22:01:39.858" endtime="20191128 22:01:40.149"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:40.149" level="INFO">Clicking element 'id=buttonProductSearch'.</msg>
+<status status="PASS" starttime="20191128 22:01:40.149" endtime="20191128 22:01:41.320"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:39.858" endtime="20191128 22:01:41.320"></status>
+</kw>
+<kw name="Click first Product in Search Results">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_LIST}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:01:41.350" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="bdeada04-360e-4fac-acd3-06ad5a20637f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:01:41.321" endtime="20191128 22:01:41.350"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:41.351" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="bdeada04-360e-4fac-acd3-06ad5a20637f")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:01:41.351" endtime="20191128 22:01:43.474"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:01:45.477" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:43.474" endtime="20191128 22:01:45.477"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:41.320" endtime="20191128 22:01:45.477"></status>
+</kw>
+<kw name="Add Product to Basket from two different Sellers">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:45.478" endtime="20191128 22:01:45.505"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:01:45.512" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="fa32278e-1363-446c-b177-c3d4877c2fb1")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:01:45.506" endtime="20191128 22:01:45.512"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:45.513" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="5ee36590-b2ad-43b3-be36-249ed52f230d")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:01:45.512" endtime="20191128 22:01:45.608"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:01:49.610" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:45.609" endtime="20191128 22:01:49.610"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:49.611" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="fa32278e-1363-446c-b177-c3d4877c2fb1")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:01:49.610" endtime="20191128 22:01:49.667"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:01:53.670" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:49.667" endtime="20191128 22:01:53.670"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:45.478" endtime="20191128 22:01:53.671"></status>
+</kw>
+<kw name="Navigate To Basket Page">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:53.672" endtime="20191128 22:01:53.697"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:53.698" level="INFO">Clicking element 'css=.icon-view-basket'.</msg>
+<status status="PASS" starttime="20191128 22:01:53.697" endtime="20191128 22:01:57.351"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:01:59.353" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:57.352" endtime="20191128 22:01:59.353"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:53.671" endtime="20191128 22:01:59.354"></status>
+</kw>
+<kw name="Validate that Selected Product added correctly">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.355" endtime="20191128 22:01:59.385"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.391" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="6c7dbb71-21f3-4518-90ad-7937274597fd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:01:59.385" endtime="20191128 22:01:59.391"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.397" level="INFO">${att1} = Fifa 20 Türkçe Menü PS4 Oyun (Standard Edition)</msg>
+<status status="PASS" starttime="20191128 22:01:59.391" endtime="20191128 22:01:59.397"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.402" level="INFO">${att2} = Fifa 20 Türkçe Menü PS4 Oyun (Standard Edition)</msg>
+<status status="PASS" starttime="20191128 22:01:59.398" endtime="20191128 22:01:59.402"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${att1}</arg>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.402" endtime="20191128 22:01:59.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.403" endtime="20191128 22:01:59.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.403" endtime="20191128 22:01:59.403"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:59.354" endtime="20191128 22:01:59.404"></status>
+</kw>
+<kw name="Validate that Sellers are different">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.404" endtime="20191128 22:01:59.425"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.432" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="9e8af40f-89cf-45a1-a19f-7a232d344f4c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:01:59.425" endtime="20191128 22:01:59.432"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.437" level="INFO">${att1} = Ercshop</msg>
+<status status="PASS" starttime="20191128 22:01:59.432" endtime="20191128 22:01:59.437"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.442" level="INFO">${att2} = MORFARE</msg>
+<status status="PASS" starttime="20191128 22:01:59.437" endtime="20191128 22:01:59.442"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.442" endtime="20191128 22:01:59.442"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.442" endtime="20191128 22:01:59.443"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:59.404" endtime="20191128 22:01:59.443"></status>
+</kw>
+<kw name="Empty the Basket">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.443" endtime="20191128 22:01:59.461"></status>
+</kw>
+<kw name="${i} IN RANGE [ 999999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.502" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="081231cc-91b5-42f3-86fc-cd5fd4f93e39")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:01:59.495" endtime="20191128 22:01:59.502"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:01:59.502" level="INFO">Length is 2</msg>
+<msg timestamp="20191128 22:01:59.502" level="INFO">${elm_len} = 2</msg>
+<status status="PASS" starttime="20191128 22:01:59.502" endtime="20191128 22:01:59.502"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:01:59.502" endtime="20191128 22:01:59.503"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:01:59.503" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="081231cc-91b5-42f3-86fc-cd5fd4f93e39")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:01:59.503" endtime="20191128 22:01:59.575"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:01.576" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:01:59.576" endtime="20191128 22:02:01.576"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:59.494" endtime="20191128 22:02:01.576"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:02:01.583" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="f78b3ee1-3129-4228-82c5-1d40b7782f2d")&gt;]</msg>
+<status status="PASS" starttime="20191128 22:02:01.576" endtime="20191128 22:02:01.583"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:02:01.584" level="INFO">Length is 1</msg>
+<msg timestamp="20191128 22:02:01.584" level="INFO">${elm_len} = 1</msg>
+<status status="PASS" starttime="20191128 22:02:01.584" endtime="20191128 22:02:01.584"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:01.584" endtime="20191128 22:02:01.585"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:01.585" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="f78b3ee1-3129-4228-82c5-1d40b7782f2d")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:01.585" endtime="20191128 22:02:01.651"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:03.653" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:01.651" endtime="20191128 22:02:03.653"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:01.576" endtime="20191128 22:02:03.653"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:02:03.662" level="INFO">${elements} = []</msg>
+<status status="PASS" starttime="20191128 22:02:03.653" endtime="20191128 22:02:03.662"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:02:03.663" level="INFO">Length is 0</msg>
+<msg timestamp="20191128 22:02:03.663" level="INFO">${elm_len} = 0</msg>
+<status status="PASS" starttime="20191128 22:02:03.662" endtime="20191128 22:02:03.663"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<msg timestamp="20191128 22:02:03.663" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20191128 22:02:03.663" endtime="20191128 22:02:03.672"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:03.653" endtime="20191128 22:02:03.672"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:59.462" endtime="20191128 22:02:03.681"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:59.443" endtime="20191128 22:02:03.681"></status>
+</kw>
+<kw name="Validate that Basket is emptied">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:03.688" level="INFO">Current page does not contain element 'css=.box.umbrella .product-name .hbus'.</msg>
+<status status="PASS" starttime="20191128 22:02:03.682" endtime="20191128 22:02:03.688"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:03.681" endtime="20191128 22:02:03.688"></status>
+</kw>
+<kw name="Logout">
+<kw name="Mouse Up" library="Selenium2Library">
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>${LOC_MYACCOUNT}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:03.688" level="INFO">Simulating Mouse Up on element 'css=#myAccount.icon-view-account'.</msg>
+<status status="PASS" starttime="20191128 22:02:03.688" endtime="20191128 22:02:04.209"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:02:05.212" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:02:04.209" endtime="20191128 22:02:05.212"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGOUT}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:05.213" level="INFO">Clicking element 'css=.logout'.</msg>
+<status status="PASS" starttime="20191128 22:02:05.212" endtime="20191128 22:02:08.059"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:10.062" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:08.059" endtime="20191128 22:02:10.062"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:03.688" endtime="20191128 22:02:10.062"></status>
+</kw>
+<kw name="Validate that Logout is successful">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Validate that Logout is successful</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:10.063" endtime="20191128 22:02:10.064"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${LOC_USERNAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:10.089" level="INFO">Element 'css=.usersProsess .login.user-name' exists but is not displayed.</msg>
+<status status="PASS" starttime="20191128 22:02:10.064" endtime="20191128 22:02:10.089"></status>
+</kw>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${LOC_USERNAME}</arg>
+</arguments>
+<assign>
+<var>${elm}</var>
+</assign>
+<msg timestamp="20191128 22:02:10.099" level="INFO">${elm} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="4bb519ff-d435-4054-8812-6f58721ae973")&gt;</msg>
+<status status="PASS" starttime="20191128 22:02:10.089" endtime="20191128 22:02:10.099"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elm}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att}</var>
+</assign>
+<msg timestamp="20191128 22:02:10.105" level="INFO">${att} =  </msg>
+<status status="PASS" starttime="20191128 22:02:10.099" endtime="20191128 22:02:10.105"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:10.105" endtime="20191128 22:02:10.105"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${att}</arg>
+<arg>${USER_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:10.105" endtime="20191128 22:02:10.106"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:10.063" endtime="20191128 22:02:10.106"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:23.739" endtime="20191128 22:02:10.106"></status>
+</kw>
+<kw name="Add Product Sony Kulaklık to the Basket by User Login">
+<kw name="Open Home Page">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:10.107" level="INFO">Opening url 'https://www.hepsiburada.com'</msg>
+<status status="PASS" starttime="20191128 22:02:10.106" endtime="20191128 22:02:12.097"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:02:15.098" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:12.097" endtime="20191128 22:02:15.098"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:10.106" endtime="20191128 22:02:15.098"></status>
+</kw>
+<kw name="Navigate To Login Page">
+<kw name="Mouse Up" library="Selenium2Library">
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>${LOC_MYACCOUNT}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:15.099" level="INFO">Simulating Mouse Up on element 'css=#myAccount.icon-view-account'.</msg>
+<status status="PASS" starttime="20191128 22:02:15.099" endtime="20191128 22:02:15.628"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:02:16.630" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:02:15.628" endtime="20191128 22:02:16.630"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGIN_USERNAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:16.631" level="INFO">Clicking element 'id=login'.</msg>
+<status status="PASS" starttime="20191128 22:02:16.631" endtime="20191128 22:02:17.073"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:19.076" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:17.074" endtime="20191128 22:02:19.076"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:15.098" endtime="20191128 22:02:19.076"></status>
+</kw>
+<kw name="Login With Crendentials">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_EMAIL}</arg>
+<arg>${usr_mail}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:19.077" level="INFO">Typing text 'test.hepsiburada@yopmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20191128 22:02:19.077" endtime="20191128 22:02:19.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:02:20.253" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:02:19.252" endtime="20191128 22:02:20.254"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_PASSWORD}</arg>
+<arg>${usr_pass}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:20.254" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" starttime="20191128 22:02:20.254" endtime="20191128 22:02:20.337"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:20.338" level="INFO">Clicking element 'css=.btn-login-submit'.</msg>
+<status status="PASS" starttime="20191128 22:02:20.337" endtime="20191128 22:02:20.422"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:02:23.423" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:20.422" endtime="20191128 22:02:23.423"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:19.076" endtime="20191128 22:02:23.424"></status>
+</kw>
+<kw name="Search A Product">
+<arguments>
+<arg>${product}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH}</arg>
+<arg>${term}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:23.425" level="INFO">Typing text 'Sony Kulaklık' into text field 'id=productSearch'.</msg>
+<status status="PASS" starttime="20191128 22:02:23.424" endtime="20191128 22:02:23.560"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:23.561" level="INFO">Clicking element 'id=buttonProductSearch'.</msg>
+<status status="PASS" starttime="20191128 22:02:23.560" endtime="20191128 22:02:25.479"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:23.424" endtime="20191128 22:02:25.479"></status>
+</kw>
+<kw name="Click first Product in Search Results">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_LIST}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:02:25.494" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="85114419-96ba-482c-a523-63d24348df31")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:02:25.480" endtime="20191128 22:02:25.494"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:25.495" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="85114419-96ba-482c-a523-63d24348df31")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:25.495" endtime="20191128 22:02:27.329"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:29.330" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:27.330" endtime="20191128 22:02:29.331"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:25.479" endtime="20191128 22:02:29.331"></status>
+</kw>
+<kw name="Add Product to Basket from two different Sellers">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:29.331" endtime="20191128 22:02:29.358"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:02:29.364" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="b93dc05f-7d0c-4089-8cde-9dc91111a9ea")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:02:29.358" endtime="20191128 22:02:29.364"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:29.365" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="f7309b3b-d9fe-4bd6-b383-9bd7b76f6b8e")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:29.364" endtime="20191128 22:02:29.430"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:02:33.433" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:29.431" endtime="20191128 22:02:33.433"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:33.434" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="b93dc05f-7d0c-4089-8cde-9dc91111a9ea")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:33.433" endtime="20191128 22:02:33.509"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:02:37.511" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:33.510" endtime="20191128 22:02:37.511"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:29.331" endtime="20191128 22:02:37.512"></status>
+</kw>
+<kw name="Navigate To Basket Page">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:37.512" endtime="20191128 22:02:37.542"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:37.542" level="INFO">Clicking element 'css=.icon-view-basket'.</msg>
+<status status="PASS" starttime="20191128 22:02:37.542" endtime="20191128 22:02:37.962"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:39.963" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:37.962" endtime="20191128 22:02:39.964"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:37.512" endtime="20191128 22:02:39.964"></status>
+</kw>
+<kw name="Validate that Selected Product added correctly">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:39.965" endtime="20191128 22:02:39.989"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:02:39.995" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="ce82227c-2eba-42c1-9536-91459a24d8d5")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:02:39.989" endtime="20191128 22:02:39.995"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.001" level="INFO">${att1} = Sony WH-CH510 Bluetooh Kulak Üstü Kulaklık - Siyah (Siyah)</msg>
+<status status="PASS" starttime="20191128 22:02:39.996" endtime="20191128 22:02:40.001"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.006" level="INFO">${att2} = Sony WH-CH510 Bluetooh Kulak Üstü Kulaklık - Siyah (Siyah)</msg>
+<status status="PASS" starttime="20191128 22:02:40.001" endtime="20191128 22:02:40.006"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${att1}</arg>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.006" endtime="20191128 22:02:40.006"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.007" endtime="20191128 22:02:40.007"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.007" endtime="20191128 22:02:40.007"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:39.964" endtime="20191128 22:02:40.007"></status>
+</kw>
+<kw name="Validate that Sellers are different">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.008" endtime="20191128 22:02:40.040"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.046" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="eb6c5ee8-b12c-4386-853b-71c0d3442a30")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:02:40.040" endtime="20191128 22:02:40.046"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.052" level="INFO">${att1} = Teknolojika</msg>
+<status status="PASS" starttime="20191128 22:02:40.047" endtime="20191128 22:02:40.052"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.057" level="INFO">${att2} = Meber Bilişim</msg>
+<status status="PASS" starttime="20191128 22:02:40.052" endtime="20191128 22:02:40.057"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.057" endtime="20191128 22:02:40.058"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.058" endtime="20191128 22:02:40.058"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:40.007" endtime="20191128 22:02:40.058"></status>
+</kw>
+<kw name="Empty the Basket">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.058" endtime="20191128 22:02:40.077"></status>
+</kw>
+<kw name="${i} IN RANGE [ 999999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.112" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="331302c3-7363-4672-91e0-30f053c08a6e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:02:40.105" endtime="20191128 22:02:40.112"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:02:40.113" level="INFO">Length is 2</msg>
+<msg timestamp="20191128 22:02:40.113" level="INFO">${elm_len} = 2</msg>
+<status status="PASS" starttime="20191128 22:02:40.112" endtime="20191128 22:02:40.113"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:40.113" endtime="20191128 22:02:40.113"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:40.114" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="331302c3-7363-4672-91e0-30f053c08a6e")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:40.113" endtime="20191128 22:02:40.170"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:42.172" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:40.170" endtime="20191128 22:02:42.172"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:40.105" endtime="20191128 22:02:42.172"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:02:42.182" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="abf01c3f-c85f-4723-a323-2ae517424309")&gt;]</msg>
+<status status="PASS" starttime="20191128 22:02:42.173" endtime="20191128 22:02:42.182"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:02:42.183" level="INFO">Length is 1</msg>
+<msg timestamp="20191128 22:02:42.183" level="INFO">${elm_len} = 1</msg>
+<status status="PASS" starttime="20191128 22:02:42.182" endtime="20191128 22:02:42.183"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:42.183" endtime="20191128 22:02:42.183"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:42.184" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="abf01c3f-c85f-4723-a323-2ae517424309")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:02:42.183" endtime="20191128 22:02:42.228"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:44.229" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:42.228" endtime="20191128 22:02:44.229"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:42.172" endtime="20191128 22:02:44.229"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:02:44.239" level="INFO">${elements} = []</msg>
+<status status="PASS" starttime="20191128 22:02:44.229" endtime="20191128 22:02:44.239"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:02:44.239" level="INFO">Length is 0</msg>
+<msg timestamp="20191128 22:02:44.239" level="INFO">${elm_len} = 0</msg>
+<status status="PASS" starttime="20191128 22:02:44.239" endtime="20191128 22:02:44.240"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<msg timestamp="20191128 22:02:44.248" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20191128 22:02:44.240" endtime="20191128 22:02:44.248"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:44.229" endtime="20191128 22:02:44.248"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:40.077" endtime="20191128 22:02:44.257"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:40.058" endtime="20191128 22:02:44.257"></status>
+</kw>
+<kw name="Validate that Basket is emptied">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:44.264" level="INFO">Current page does not contain element 'css=.box.umbrella .product-name .hbus'.</msg>
+<status status="PASS" starttime="20191128 22:02:44.257" endtime="20191128 22:02:44.264"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:44.257" endtime="20191128 22:02:44.264"></status>
+</kw>
+<kw name="Logout">
+<kw name="Mouse Up" library="Selenium2Library">
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>${LOC_MYACCOUNT}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:44.265" level="INFO">Simulating Mouse Up on element 'css=#myAccount.icon-view-account'.</msg>
+<status status="PASS" starttime="20191128 22:02:44.265" endtime="20191128 22:02:44.788"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20191128 22:02:45.789" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191128 22:02:44.788" endtime="20191128 22:02:45.789"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_LOGOUT}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:45.790" level="INFO">Clicking element 'css=.logout'.</msg>
+<status status="PASS" starttime="20191128 22:02:45.790" endtime="20191128 22:02:48.119"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:02:50.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:48.119" endtime="20191128 22:02:50.121"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:44.264" endtime="20191128 22:02:50.121"></status>
+</kw>
+<kw name="Validate that Logout is successful">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Validate that Logout is successful</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:50.122" endtime="20191128 22:02:50.122"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${LOC_USERNAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:50.144" level="INFO">Element 'css=.usersProsess .login.user-name' exists but is not displayed.</msg>
+<status status="PASS" starttime="20191128 22:02:50.122" endtime="20191128 22:02:50.144"></status>
+</kw>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>${LOC_USERNAME}</arg>
+</arguments>
+<assign>
+<var>${elm}</var>
+</assign>
+<msg timestamp="20191128 22:02:50.151" level="INFO">${elm} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6e56e2b6c2df1893509ee2e726bc5d38", element="d9e4622f-975f-4efa-8209-5cfa526b6ff0")&gt;</msg>
+<status status="PASS" starttime="20191128 22:02:50.145" endtime="20191128 22:02:50.151"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elm}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att}</var>
+</assign>
+<msg timestamp="20191128 22:02:50.156" level="INFO">${att} =  </msg>
+<status status="PASS" starttime="20191128 22:02:50.151" endtime="20191128 22:02:50.156"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:50.156" endtime="20191128 22:02:50.157"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${att}</arg>
+<arg>${USER_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:02:50.157" endtime="20191128 22:02:50.157"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:50.121" endtime="20191128 22:02:50.157"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:10.106" endtime="20191128 22:02:50.157"></status>
+</kw>
+<kw name="End Web Test" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191128 22:02:50.158" endtime="20191128 22:02:50.399"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:50.157" endtime="20191128 22:02:50.400"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:01:21.527" endtime="20191128 22:02:50.401" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Adding Products to the Basket without User Login">
+<kw name="Begin Web Test" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:50.406" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20191128 22:02:50.405" endtime="20191128 22:02:52.338"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191128 22:02:52.339" endtime="20191128 22:02:52.482"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:50.404" endtime="20191128 22:02:52.482"></status>
+</kw>
+<kw name="Add Product Walkman to the Basket without User Login">
+<kw name="Open Home Page">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20191128 22:02:52.483" level="INFO">Opening url 'https://www.hepsiburada.com'</msg>
+<status status="PASS" starttime="20191128 22:02:52.483" endtime="20191128 22:02:57.400"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:03:00.402" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:02:57.401" endtime="20191128 22:03:00.402"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:52.483" endtime="20191128 22:03:00.402"></status>
+</kw>
+<kw name="Search A Product">
+<arguments>
+<arg>${product}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH}</arg>
+<arg>${term}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:00.404" level="INFO">Typing text 'Walkman' into text field 'id=productSearch'.</msg>
+<status status="PASS" starttime="20191128 22:03:00.403" endtime="20191128 22:03:00.571"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:00.572" level="INFO">Clicking element 'id=buttonProductSearch'.</msg>
+<status status="PASS" starttime="20191128 22:03:00.571" endtime="20191128 22:03:06.803"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:00.402" endtime="20191128 22:03:06.803"></status>
+</kw>
+<kw name="Click first Product in Search Results">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_LIST}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:06.840" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="6d0afa9e-f7ad-460a-9d24-2d2db464eb25")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:06.804" endtime="20191128 22:03:06.840"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:06.840" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="6d0afa9e-f7ad-460a-9d24-2d2db464eb25")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:06.840" endtime="20191128 22:03:09.933"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:11.935" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:09.933" endtime="20191128 22:03:11.935"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:06.803" endtime="20191128 22:03:11.935"></status>
+</kw>
+<kw name="Add Product to Basket from two different Sellers">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:11.936" endtime="20191128 22:03:11.963"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:11.970" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="5fcb70db-f9d6-475e-88b1-82a3ad5799ce")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:11.963" endtime="20191128 22:03:11.970"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:11.970" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="d00f1650-83af-4b7f-a03e-146e8971c30d")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:11.970" endtime="20191128 22:03:12.049"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:03:16.050" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:12.050" endtime="20191128 22:03:16.051"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:16.051" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="5fcb70db-f9d6-475e-88b1-82a3ad5799ce")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:16.051" endtime="20191128 22:03:16.117"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:03:20.119" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:16.117" endtime="20191128 22:03:20.119"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:11.936" endtime="20191128 22:03:20.119"></status>
+</kw>
+<kw name="Navigate To Basket Page">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:20.120" endtime="20191128 22:03:20.150"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:20.150" level="INFO">Clicking element 'css=.icon-view-basket'.</msg>
+<status status="PASS" starttime="20191128 22:03:20.150" endtime="20191128 22:03:20.987"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:22.988" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:20.988" endtime="20191128 22:03:22.988"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:20.119" endtime="20191128 22:03:22.989"></status>
+</kw>
+<kw name="Validate that Selected Product added correctly">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:22.989" endtime="20191128 22:03:23.017"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.024" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="001c7fa3-4334-4693-97d7-229d1b37886f")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:23.018" endtime="20191128 22:03:23.024"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.030" level="INFO">${att1} = Sony Nw-Ws413 Walkman Su Geçirmez Mp3 Çalar (Sarı)</msg>
+<status status="PASS" starttime="20191128 22:03:23.024" endtime="20191128 22:03:23.031"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.036" level="INFO">${att2} = Sony Nw-Ws413 Walkman Su Geçirmez Mp3 Çalar (Sarı)</msg>
+<status status="PASS" starttime="20191128 22:03:23.031" endtime="20191128 22:03:23.036"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${att1}</arg>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.036" endtime="20191128 22:03:23.036"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.037" endtime="20191128 22:03:23.037"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.037" endtime="20191128 22:03:23.037"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:22.989" endtime="20191128 22:03:23.037"></status>
+</kw>
+<kw name="Validate that Sellers are different">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.038" endtime="20191128 22:03:23.056"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.063" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="8bea46b4-a5c1-4bd0-b40f-4b087941fbcc")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:23.056" endtime="20191128 22:03:23.063"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.070" level="INFO">${att1} = Webdencebe</msg>
+<status status="PASS" starttime="20191128 22:03:23.063" endtime="20191128 22:03:23.070"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.075" level="INFO">${att2} = Teknolojika</msg>
+<status status="PASS" starttime="20191128 22:03:23.070" endtime="20191128 22:03:23.075"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.075" endtime="20191128 22:03:23.075"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.075" endtime="20191128 22:03:23.076"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:23.037" endtime="20191128 22:03:23.076"></status>
+</kw>
+<kw name="Empty the Basket">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.076" endtime="20191128 22:03:23.094"></status>
+</kw>
+<kw name="${i} IN RANGE [ 999999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.132" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="10991c7b-143b-4544-a2f5-70f8692a7e09")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:23.125" endtime="20191128 22:03:23.132"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:03:23.132" level="INFO">Length is 2</msg>
+<msg timestamp="20191128 22:03:23.132" level="INFO">${elm_len} = 2</msg>
+<status status="PASS" starttime="20191128 22:03:23.132" endtime="20191128 22:03:23.132"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:23.133" endtime="20191128 22:03:23.133"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:23.133" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="10991c7b-143b-4544-a2f5-70f8692a7e09")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:23.133" endtime="20191128 22:03:23.192"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:25.194" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:23.192" endtime="20191128 22:03:25.194"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:23.125" endtime="20191128 22:03:25.194"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:03:25.204" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="06436ce4-0cd0-4ee4-9cc9-0ff362246e96")&gt;]</msg>
+<status status="PASS" starttime="20191128 22:03:25.195" endtime="20191128 22:03:25.204"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:03:25.205" level="INFO">Length is 1</msg>
+<msg timestamp="20191128 22:03:25.205" level="INFO">${elm_len} = 1</msg>
+<status status="PASS" starttime="20191128 22:03:25.204" endtime="20191128 22:03:25.205"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:25.205" endtime="20191128 22:03:25.205"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:25.206" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="06436ce4-0cd0-4ee4-9cc9-0ff362246e96")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:25.205" endtime="20191128 22:03:25.250"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:27.252" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:25.251" endtime="20191128 22:03:27.253"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:25.194" endtime="20191128 22:03:27.253"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:03:27.261" level="INFO">${elements} = []</msg>
+<status status="PASS" starttime="20191128 22:03:27.253" endtime="20191128 22:03:27.261"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:03:27.262" level="INFO">Length is 0</msg>
+<msg timestamp="20191128 22:03:27.262" level="INFO">${elm_len} = 0</msg>
+<status status="PASS" starttime="20191128 22:03:27.262" endtime="20191128 22:03:27.262"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<msg timestamp="20191128 22:03:27.263" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20191128 22:03:27.262" endtime="20191128 22:03:27.263"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:27.253" endtime="20191128 22:03:27.263"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:23.094" endtime="20191128 22:03:27.276"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:23.076" endtime="20191128 22:03:27.276"></status>
+</kw>
+<kw name="Validate that Basket is emptied">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:27.283" level="INFO">Current page does not contain element 'css=.box.umbrella .product-name .hbus'.</msg>
+<status status="PASS" starttime="20191128 22:03:27.277" endtime="20191128 22:03:27.283"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:27.276" endtime="20191128 22:03:27.283"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:52.482" endtime="20191128 22:03:27.283"></status>
+</kw>
+<kw name="Add Product God Of War to the Basket without User Login">
+<kw name="Open Home Page">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${BASE_URL}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:27.285" level="INFO">Opening url 'https://www.hepsiburada.com'</msg>
+<status status="PASS" starttime="20191128 22:03:27.284" endtime="20191128 22:03:30.005"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191128 22:03:33.006" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:30.005" endtime="20191128 22:03:33.006"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:27.284" endtime="20191128 22:03:33.006"></status>
+</kw>
+<kw name="Search A Product">
+<arguments>
+<arg>${product}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH}</arg>
+<arg>${term}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:33.008" level="INFO">Typing text 'God Of War' into text field 'id=productSearch'.</msg>
+<status status="PASS" starttime="20191128 22:03:33.007" endtime="20191128 22:03:33.126"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_SEARCH_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:33.126" level="INFO">Clicking element 'id=buttonProductSearch'.</msg>
+<status status="PASS" starttime="20191128 22:03:33.126" endtime="20191128 22:03:41.358"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:33.007" endtime="20191128 22:03:41.358"></status>
+</kw>
+<kw name="Click first Product in Search Results">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_LIST}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:41.383" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="a50d5fcc-da89-49d5-b1b6-5d4abb81b81e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:41.359" endtime="20191128 22:03:41.383"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:41.384" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="a50d5fcc-da89-49d5-b1b6-5d4abb81b81e")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:41.383" endtime="20191128 22:03:43.713"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:45.714" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:43.713" endtime="20191128 22:03:45.714"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:41.359" endtime="20191128 22:03:45.715"></status>
+</kw>
+<kw name="Add Product to Basket from two different Sellers">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:45.715" endtime="20191128 22:03:45.742"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_OTHER_SELLERS_ADD_BASKET}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:45.750" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="34b623df-ef94-495f-b18e-43f163d22cc9")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:45.743" endtime="20191128 22:03:45.751"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:45.751" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="2ecb18f5-d84b-4a9f-9e83-42e4cd9bcf7e")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:45.751" endtime="20191128 22:03:45.827"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:03:49.829" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:45.827" endtime="20191128 22:03:49.829"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:49.830" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="34b623df-ef94-495f-b18e-43f163d22cc9")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:49.829" endtime="20191128 22:03:49.885"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191128 22:03:53.886" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:49.885" endtime="20191128 22:03:53.887"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:45.715" endtime="20191128 22:03:53.887"></status>
+</kw>
+<kw name="Navigate To Basket Page">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:53.888" endtime="20191128 22:03:53.914"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOC_BASKET_BUTTON}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:53.915" level="INFO">Clicking element 'css=.icon-view-basket'.</msg>
+<status status="PASS" starttime="20191128 22:03:53.914" endtime="20191128 22:03:54.294"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:56.296" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:54.294" endtime="20191128 22:03:56.296"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:53.887" endtime="20191128 22:03:56.296"></status>
+</kw>
+<kw name="Validate that Selected Product added correctly">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.297" endtime="20191128 22:03:56.326"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.333" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="fee5d23c-72b4-43f5-b5a2-199245172e77")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:56.327" endtime="20191128 22:03:56.333"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.340" level="INFO">${att1} = God Of War PS4 Oyun-Türkçe Menü</msg>
+<status status="PASS" starttime="20191128 22:03:56.334" endtime="20191128 22:03:56.340"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.347" level="INFO">${att2} = God Of War PS4 Oyun-Türkçe Menü</msg>
+<status status="PASS" starttime="20191128 22:03:56.340" endtime="20191128 22:03:56.347"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${att1}</arg>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.347" endtime="20191128 22:03:56.347"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.348" endtime="20191128 22:03:56.348"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.348" endtime="20191128 22:03:56.348"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:56.297" endtime="20191128 22:03:56.348"></status>
+</kw>
+<kw name="Validate that Sellers are different">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.349" endtime="20191128 22:03:56.368"></status>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_SELLERS}</arg>
+</arguments>
+<assign>
+<var>${elms}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.374" level="INFO">${elms} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="90038f24-149c-4bf8-b39d-09f46dd371de")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:56.368" endtime="20191128 22:03:56.374"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[0]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att1}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.379" level="INFO">${att1} = Metronom Elektronik</msg>
+<status status="PASS" starttime="20191128 22:03:56.374" endtime="20191128 22:03:56.379"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${elms[1]}</arg>
+<arg>text</arg>
+</arguments>
+<assign>
+<var>${att2}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.385" level="INFO">${att2} = Aplus</msg>
+<status status="PASS" starttime="20191128 22:03:56.380" endtime="20191128 22:03:56.385"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att1}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.385" endtime="20191128 22:03:56.385"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${att2}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.385" endtime="20191128 22:03:56.385"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:56.348" endtime="20191128 22:03:56.385"></status>
+</kw>
+<kw name="Empty the Basket">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.386" endtime="20191128 22:03:56.405"></status>
+</kw>
+<kw name="${i} IN RANGE [ 999999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.441" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="f5d05567-a75d-4479-8a8d-4d115da8ec75")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191128 22:03:56.434" endtime="20191128 22:03:56.441"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:03:56.442" level="INFO">Length is 2</msg>
+<msg timestamp="20191128 22:03:56.442" level="INFO">${elm_len} = 2</msg>
+<status status="PASS" starttime="20191128 22:03:56.442" endtime="20191128 22:03:56.442"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:56.442" endtime="20191128 22:03:56.442"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:56.443" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="f5d05567-a75d-4479-8a8d-4d115da8ec75")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:56.443" endtime="20191128 22:03:56.500"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:03:58.502" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:56.500" endtime="20191128 22:03:58.502"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:56.434" endtime="20191128 22:03:58.502"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:03:58.512" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="7782fd8f-f4ec-4b90-906c-b116ce4a0fc7")&gt;]</msg>
+<status status="PASS" starttime="20191128 22:03:58.503" endtime="20191128 22:03:58.513"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:03:58.513" level="INFO">Length is 1</msg>
+<msg timestamp="20191128 22:03:58.513" level="INFO">${elm_len} = 1</msg>
+<status status="PASS" starttime="20191128 22:03:58.513" endtime="20191128 22:03:58.513"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<status status="PASS" starttime="20191128 22:03:58.513" endtime="20191128 22:03:58.514"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${elements[0]}</arg>
+</arguments>
+<msg timestamp="20191128 22:03:58.514" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf10936b180a08a792e341172ce19f3e", element="7782fd8f-f4ec-4b90-906c-b116ce4a0fc7")&gt;'.</msg>
+<status status="PASS" starttime="20191128 22:03:58.514" endtime="20191128 22:03:58.559"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191128 22:04:00.561" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191128 22:03:58.560" endtime="20191128 22:04:00.561"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:58.502" endtime="20191128 22:04:00.562"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Get WebElements" library="Selenium2Library">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${LOC_DELETE_BUTTON}</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191128 22:04:00.571" level="INFO">${elements} = []</msg>
+<status status="PASS" starttime="20191128 22:04:00.562" endtime="20191128 22:04:00.571"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${elm_len}</var>
+</assign>
+<msg timestamp="20191128 22:04:00.572" level="INFO">Length is 0</msg>
+<msg timestamp="20191128 22:04:00.572" level="INFO">${elm_len} = 0</msg>
+<status status="PASS" starttime="20191128 22:04:00.571" endtime="20191128 22:04:00.572"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${elm_len} == 0</arg>
+</arguments>
+<msg timestamp="20191128 22:04:00.572" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20191128 22:04:00.572" endtime="20191128 22:04:00.572"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:04:00.562" endtime="20191128 22:04:00.572"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:56.405" endtime="20191128 22:04:00.585"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:56.386" endtime="20191128 22:04:00.586"></status>
+</kw>
+<kw name="Validate that Basket is emptied">
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${LOC_PRODUCT_NAME}</arg>
+</arguments>
+<msg timestamp="20191128 22:04:00.593" level="INFO">Current page does not contain element 'css=.box.umbrella .product-name .hbus'.</msg>
+<status status="PASS" starttime="20191128 22:04:00.586" endtime="20191128 22:04:00.593"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:04:00.586" endtime="20191128 22:04:00.593"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:03:27.284" endtime="20191128 22:04:00.593"></status>
+</kw>
+<kw name="End Web Test" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191128 22:04:00.594" endtime="20191128 22:04:00.822"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:04:00.594" endtime="20191128 22:04:00.823"></status>
+</kw>
+<status status="PASS" starttime="20191128 22:02:50.403" endtime="20191128 22:04:00.824" critical="yes"></status>
+</test>
+<doc>HepsiBuradaTest</doc>
+<status status="PASS" starttime="20191128 22:01:21.213" endtime="20191128 22:04:00.828"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Adding Product To Basket">Adding Product To Basket</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

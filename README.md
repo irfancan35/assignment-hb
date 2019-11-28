@@ -11,7 +11,7 @@ Install libraries:
 - `python -m pip install -r requirements.txt`
 
 Install webdrivers:
-- `webdrivermanager firefox chrome opera --linkpath /usr/local/bin`
+- `webdrivermanager firefox chrome opera --linkpath ./drivers`
 
 Test Execution with `pytest`:
 * `python -m pytest ./pytest/test_adding_product_to_basket.py --html=Report_pytest.html --self-contained-html` or
@@ -21,7 +21,7 @@ Test Execution with `pytest-bdd`:
 * `python -m pytest ./pytest-bdd/test_steps.py --html=Report_pytest-bdd.html --self-contained-html` or
 * `pytest ./pytest-bdd/test_steps.py --html=Report_pytest-bdd.html --self-contained-html`
 
-Test Execution with `robot framework`:
+Test Execution with `Robot Framework`:
 * `robot -d Results ./robot/adding_product_to_basket.robot`
 
 Deactivate Virtual Environment:

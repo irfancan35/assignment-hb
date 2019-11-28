@@ -1,0 +1,9 @@
+selenium
+webdrivermanager
+pytest
+pytest-html
+pytest-sugar
+pytest-bdd
+robotframework
+robotframework-selenium2library
+robotframework-debuglibrary

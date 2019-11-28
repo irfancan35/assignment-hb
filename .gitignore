@@ -1,0 +1,8 @@
+allure-report
+results
+venv
+assets
+Report_pytest.html
+.idea
+.python-version
+.vscode
